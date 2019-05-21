@@ -14,7 +14,10 @@
           Техномарт
         </a>
         <div class="header-search">
-          Поиск:
+        	<form action="#" method="get">
+        		<label for="search" class="visually-hidden">Поиск</label>
+        		<input id="search" type="search" name="search" placeholder="Поиск:" class="search">
+        	</form>
         </div>
         <ul>
           <li>
@@ -80,7 +83,61 @@
     <section class="catalog container">
       <div class="main-filters">
         <h2 class="visually-hidden">Фильтры товаров</h2>
-        <!-- Форма -->
+        <form action="#" method="get" class="filter">
+        	<fieldset>
+        		<legend>Производители:</legend>
+        		<ul>
+        			<li class="filter-option">
+        				<label>
+        					<input type="checkbox" name="Bosch" checked>
+        					Bosch
+        				</label>
+        			</li>
+        			<li class="filter-option">
+        				<label>
+        					<input type="checkbox" name="Интерскол">
+        					Интерскол
+        				</label>
+        			</li>
+        			<li class="filter-option">
+        				<label>
+        					<input type="checkbox" name="Makita" checked>
+        					Makita
+        				</label>
+        			</li>
+        			<li class="filter-option">
+        				<label>
+        					<input type="checkbox" name="Dewalt">
+        					Dewalt
+        				</label>
+        			</li>
+        			<li class="filter-option">
+        				<label>
+        					<input type="checkbox" name="Hitachi">
+        					Hitachi
+        				</label>
+        			</li>
+        		</ul>
+        	</fieldset>
+        	<fieldset>
+        		<legend>Питание:</legend>
+        		<ul>
+        			<li class="filter-option">
+        				<label>
+        					<input type="radio" name="product-feature" value="battery" checked>
+        					Аккумуляторные
+        				</label>
+        			</li>
+        			<li class="filter-option">
+        				<label>
+        					<input type="radio" name="product-feature" value="network">
+        					Сетевые
+        				</label>
+        			</li>
+        		</ul>
+        	</fieldset>
+        	<button type="submit" class="btn btn-filter">Показать</button>
+        </form>
       </div>
       <div class="main-catalog">
         <h2 class="visually-hidden">Карточки товаров</h2>
@@ -282,9 +339,21 @@
         Все права защищены
       </p>
       <ul class="footer-social">
-        <li><a href="#" class="social-button">ВК</a></li>
-        <li><a href="#" class="social-button">ФБ</a></li>
-        <li><a href="#" class="social-button">Инстаграм</a></li>
+        <li>
+          <a href="#" class="social-button">
+            <img src="img/vk-icon.svg" alt="ВК">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-button">
+            <img src="img/fb-icon.svg" alt="ФБ">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-button">
+            <img src="img/insta-icon.svg" alt="Инстаграм">
+          </a>
+        </li>
       </ul>
       <div class="footer-links">
         <p>Обратная связь:
