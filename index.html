@@ -14,14 +14,17 @@
           Техномарт
         </a>
         <div class="header-search">
-          Поиск:
+        	<form action="#" method="get">
+        		<label for="search" class="visually-hidden">Поиск</label>
+        		<input id="search" type="search" name="search" placeholder="Поиск:" class="search">
+        	</form>
         </div>
         <ul>
           <li>
             <a href="#" class="header-bookmark">Закладки:<span>0</span></a>
           </li>
           <li>
-            <a href="#" class="header-cart">Корзина:<span>10</span></a>
+            <a href="#" class="header-cart">Корзина:<span>0</span></a>
           </li>
           <li>
             <a href="#" class="btn order-btn">Оформить заказ</a>
@@ -85,7 +88,7 @@
         <p class="about-text">
           Вы можете забрать товар сами, заехав в наш офис:
         </p>
-        <!-- Здесь будет карта -->
+        <img src="img/small-map.png" alt="Большая Конюшенная ул., 19">
         <button type="submit" class="btn about-btn">Заблудились? Напишите нам!</button>
       </div>
     </section>
@@ -123,9 +126,21 @@
         Все права защищены
       </p>
       <ul class="footer-social">
-        <li><a href="#" class="social-button">ВК</a></li>
-        <li><a href="#" class="social-button">ФБ</a></li>
-        <li><a href="#" class="social-button">Инстаграм</a></li>
+        <li>
+          <a href="#" class="social-button">
+            <img src="img/vk-icon.svg" alt="ВК">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-button">
+            <img src="img/fb-icon.svg" alt="ФБ">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-button">
+            <img src="img/insta-icon.svg" alt="Инстаграм">
+          </a>
+        </li>
       </ul>
       <div class="footer-links">
         <p>Обратная связь:
@@ -137,6 +152,32 @@
       </div>
     </div>
   </footer>
+
+   <section class="modal modal-login">
+    <h2 class="visually-hidden">Окно для ввода данных</h2>
+    <form action="https://echo.htmlacademy.ru" method="post" class="login-form">
+      <p>
+      	<label for="name-surname">Ваше имя:</label>
+      	<input id="name-surname" class="name" type="text" name="name-surname" placeholder="Имя Фамилия">
+      </p>
+      <p>
+      	<label for="e-mail">Ваш e-mail:</label>
+      	<input id="e-mail" class="e-mail" type="e-mail" name="e-mail" placeholder="email@example.com">
+      </p>
+      <p>
+      	<label for="message">Текст письма:</label>
+      	<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit" class="btn btn-submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть окно">X</button>
+  </section>
+
+  <section class="modal modal-map">
+  	<img src="img/big-map.png" alt="Большая Конюшенная ул., 19">
+  	<button class="modal-close" type="button" aria-label="Закрыть окно">X</button>
+  </section>
+
 </body>
 
 </html>
