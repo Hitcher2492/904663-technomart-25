@@ -14,10 +14,10 @@
           Техномарт
         </a>
         <div class="header-search">
-        	<form action="#" method="get">
-        		<label for="search" class="visually-hidden">Поиск</label>
-        		<input id="search" type="search" name="search" placeholder="Поиск:" class="search">
-        	</form>
+          <form action="#" method="get">
+            <label for="search" class="visually-hidden">Поиск</label>
+            <input id="search" type="search" name="search" placeholder="Поиск:" class="search">
+          </form>
         </div>
         <ul>
           <li>
@@ -82,62 +82,81 @@
     <h2 class="page-title container">Перфораторы</h2>
     <section class="catalog container">
       <div class="main-filters">
-        <h2 class="visually-hidden">Фильтры товаров</h2>
+        <h2>Фильтр:</h2>
         <form action="#" method="get" class="filter">
-        	<fieldset>
-        		<legend>Производители:</legend>
-        		<ul>
-        			<li class="filter-option">
-        				<label>
-        					<input type="checkbox" name="Bosch" checked>
-        					Bosch
-        				</label>
-        			</li>
-        			<li class="filter-option">
-        				<label>
-        					<input type="checkbox" name="Интерскол">
-        					Интерскол
-        				</label>
-        			</li>
-        			<li class="filter-option">
-        				<label>
-        					<input type="checkbox" name="Makita" checked>
-        					Makita
-        				</label>
-        			</li>
-        			<li class="filter-option">
-        				<label>
-        					<input type="checkbox" name="Dewalt">
-        					Dewalt
-        				</label>
-        			</li>
-        			<li class="filter-option">
-        				<label>
-        					<input type="checkbox" name="Hitachi">
-        					Hitachi
-        				</label>
-        			</li>
-        		</ul>
-        	</fieldset>
-        	<fieldset>
-        		<legend>Питание:</legend>
-        		<ul>
-        			<li class="filter-option">
-        				<label>
-        					<input type="radio" name="product-feature" value="battery" checked>
-        					Аккумуляторные
-        				</label>
-        			</li>
-        			<li class="filter-option">
-        				<label>
-        					<input type="radio" name="product-feature" value="network">
-        					Сетевые
-        				</label>
-        			</li>
-        		</ul>
-        	</fieldset>
-        	<button type="submit" class="btn btn-filter">Показать</button>
+          <fieldset>
+            <legend>Цена</legend>
+            <div id="slider-price"></div>
+            <input type="text" name="min-price" class="min-price">
+            -
+            <input type="text" name="max-price" class="max-price">
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input type="checkbox" name="Bosch" checked>
+                  Bosch
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input type="checkbox" name="Интерскол">
+                  Интерскол
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input type="checkbox" name="Makita" checked>
+                  Makita
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input type="checkbox" name="Dewalt">
+                  Dewalt
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input type="checkbox" name="Hitachi">
+                  Hitachi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filter-option">
+                <label>
+                  <input type="radio" name="product-feature" value="battery" checked>
+                  Аккумуляторные
+                </label>
+              </li>
+              <li class="filter-option">
+                <label>
+                  <input type="radio" name="product-feature" value="network">
+                  Сетевые
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="btn btn-filter">Показать</button>
         </form>
+      </div>
+      <div class="sort">
+        <h2>Сортировка:</h2>
+        <a href="#">По цене</a>
+        <a href="#">По типу</a>
+        <a href="#">По функционалу</a>
+        <a href="#">
+          <img src="img/min-max.svg" alt="Сортировка от меньшего к большему">
+        </a>
+        <a href="#">
+          <img src="img/max-min.svg" alt="Сортировка от большего к меньшему">
+        </a>
       </div>
       <div class="main-catalog">
         <h2 class="visually-hidden">Карточки товаров</h2>
@@ -179,7 +198,7 @@
               25500 Р
             </p>
           </li>
-          <li class="catalog-item catalog-item-new">
+          <li class="catalog-item new">
             <img src="img/3.png" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
             <h3>
               <a href="catalog-item.html">
@@ -214,7 +233,7 @@
               15500 Р
             </p>
           </li>
-          <li class="catalog-item catalog-item-new">
+          <li class="catalog-item new">
             <img src="img/2.png" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
             <h3>
               <a href="catalog-item.html">
@@ -249,7 +268,7 @@
               12500 Р
             </p>
           </li>
-          <li class="catalog-item catalog-item-new">
+          <li class="catalog-item new">
             <img src="img/1.png" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
             <h3>
               <a href="catalog-item.html">
@@ -304,6 +323,12 @@
           </li>
         </ul>
       </div>
+      <ul class="pagination-list">
+        <li class="pagination-item current"><a href="#">1</a></li>
+        <li class="pagination-item"><a>2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item"><a href="#">Следующая</a></li>
+      </ul>
     </section>
     <section class="sup-footer">
       <div class="container">
@@ -330,6 +355,13 @@
           </ul>
         </div>
       </div>
+    </section>
+    <section class="about-perf">
+    	<p class="title-perf">Пара слов о рерфораторах</p>
+    	<p>
+    		Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+			Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+    	</p>
     </section>
   </main>
   <footer class="footer">
@@ -365,6 +397,17 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal modal-cart">
+  	<img src="img/form-1.svg" alt="Товар добавленг в корзину">
+  	<p>
+  		Товар добавлен в корзину!
+  	</p>
+  	<a href="#" class="btn btn-modal">Оформить заказ</a>
+  	<button class="btn btn-modal-close" type="button">Продолжить покупки</button>
+  	<button class="modal-close" type="button" aria-label="Закрыть окно">X</button>
+  </section>
+
 </body>
 
 </html>
