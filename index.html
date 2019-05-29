@@ -4,13 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <header class="header">
     <div class="header-top">
       <div class="container">
-        <a class="header-logo">
+        <a class="header-logo logo">
           Техномарт
         </a>
         <div class="header-search">
@@ -21,10 +25,14 @@
         </div>
         <ul>
           <li>
-            <a href="#" class="header-bookmark">Закладки:<span>0</span></a>
+            <a href="#" class="header-bookmark">
+            	Закладки:<span>0</span>
+            </a>
           </li>
           <li>
-            <a href="#" class="header-cart">Корзина:<span>0</span></a>
+            <a href="#" class="header-cart">
+            	Корзина:<span>0</span>
+            </a>
           </li>
           <li>
             <a href="#" class="btn order-btn">Оформить заказ</a>
@@ -52,8 +60,7 @@
           <a href="#">Регистрация</a>
         </li>
       </ul>
-    </div>
-    <nav class="container">
+      <nav>
       <ul class="header-nav">
         <li><a href="index.html">Главная</a></li>
         <li><a href="company.html">Компания</a></li>
@@ -64,6 +71,7 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
+    </div>
   </header>
   <main>
   	<section class="offer">
@@ -137,15 +145,15 @@
   			<a href="#" class="btn">Все популярные товары</a>
   		</div>
   		<ul class="top-list">
-  			<li class="top-item">
+  			<li class="catalog-item">
             <img src="img/4.png" width="218" height="170" alt="Перфоратор Bosch BFG 9000">
             <h3>
-              <a href="catalog-item.html">
+              <a href="catalog-item.html" class="title-product">
                 Перфоратор Bosch BFG 9000
               </a>
             </h3>
             <p class="catalog-price-del">
-              32500 Р
+              32500 Р.
             </p>
             <ul class="item-actions">
               <li><a href="#" class="item-actions-buy">Купить</a></li>
@@ -158,12 +166,12 @@
           <li class="catalog-item">
             <img src="img/1.png" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
             <h3>
-              <a href="catalog-item.html">
+              <a href="catalog-item.html" class="title-product">
                 Перфоратор Bosch BFG 3000
               </a>
             </h3>
             <p class="catalog-price-del">
-              22500 Р
+              22500 Р.
             </p>
             <ul class="item-actions">
               <li><a href="#" class="item-actions-buy">Купить</a></li>
@@ -176,12 +184,12 @@
           <li class="catalog-item">
             <img src="img/2.png" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
             <h3>
-              <a href="catalog-item.html">
+              <a href="catalog-item.html" class="title-product">
                 Перфоратор Bosch BFG 6000
               </a>
             </h3>
             <p class="catalog-price-del">
-              30500 Р
+              30500 Р.
             </p>
             <ul class="item-actions">
               <li><a href="#" class="item-actions-buy">Купить</a></li>
@@ -194,7 +202,7 @@
           <li class="catalog-item new">
             <img src="img/3.png" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
             <h3>
-              <a href="catalog-item.html">
+              <a href="catalog-item.html" class="title-product">
                 Перфоратор Bosch BFG 2000
               </a>
             </h3>
@@ -216,42 +224,42 @@
   			<a href="#" class="btn">Все производители</a>
   		</div>
   		<ul class="manufacturers-list">
-  			<li>
+  			<li tabindex="0">
   				<a href="#" class="manufacturers-item">
   					<img src="img/bosch.png" alt="Производитель Bosch">
   				</a>
   			</li>
-  			<li>
+  			<li tabindex="0">
   				<a href="#" class="manufacturers-item">
   					<img src="img/Makita.png" alt="Производитель Makita">
   				</a>
   			</li>
-  			<li>
+  			<li tabindex="0">
   				<a href="#" class="manufacturers-item">
   					<img src="img/DeWALT.png" alt="Производитель Dewalt">
   				</a>
   			</li>
-  			<li>
+  			<li tabindex="0">
   				<a href="#" class="manufacturers-item">
   					<img src="img/Интерскол.png" alt="Производитель Интерскол">
   				</a>
   			</li>
-  			<li>
+  			<li tabindex="0">
   				<a href="#" class="manufacturers-item">
   					<img src="img/Hitachi.png" alt="Производитель Hitachi">
   				</a>
   			</li>
-  			<li>
+  			<li tabindex="0"> 
   				<a href="#" class="manufacturers-item">
   					<img src="img/LG.png" alt="Производитель LG">
   				</a>
   			</li>
-  			<li>
+  			<li tabindex="0">
   				<a href="#" class="manufacturers-item">
   					<img src="img/AEG.png" alt="Производитель Aeg">
   				</a>
   			</li>
-  			<li>
+  			<li tabindex="0">
   				<a href="#" class="manufacturers-item">
   					<img src="img/Metabo.png" alt="Производитель Metabo">
   				</a>
@@ -266,7 +274,7 @@
   		</p>
   		<nav>
   			<ul class="serciсes-nav">
-  				<li><a href="#">Доставка</a></li>
+  				<li><a href="#" class="current">Доставка</a></li>
   				<li><a href="#">Гарантия</a></li>
   				<li><a href="#">Кредит</a></li>
   			</ul>
@@ -408,12 +416,14 @@
       	<label for="message">Текст письма:</label>
       	<textarea class="message" name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
       </p>
-      <button type="submit" class="btn btn-submit">Отправить</button>
+      <div class="font-btn">
+      	<button type="submit" class="btn btn-submit">Отправить</button>
+      </div>
     </form>
     <button class="modal-close" type="button" aria-label="Закрыть окно">X</button>
   </section>
 
-  <section class="modal modal-map">
+  <section class="modal-map">
   	<img src="img/big-map.png" alt="Большая Конюшенная ул., 19">
   	<button class="modal-close" type="button" aria-label="Закрыть окно">X</button>
   </section>
