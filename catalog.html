@@ -4,13 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <header class="header">
     <div class="header-top">
       <div class="container">
-        <a class="logo">
+        <a class="header-logo logo">
           Техномарт
         </a>
         <div class="header-search">
@@ -44,7 +48,7 @@
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </p>
       </div>
-      <div class="header-user">
+      <div class="header-user-log">
         <div class="profile">
           <a href="#" class="user-name">
             <svg>#</svg>
@@ -59,8 +63,7 @@
           <li><a href="#">Личный кабинет</a></li>
         </ul>
       </div>
-    </div>
-    <nav class="container">
+      <nav>
       <ul class="header-nav">
         <li><a href="index.html">Главная</a></li>
         <li><a href="company.html">Компания</a></li>
@@ -71,22 +74,26 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
     </nav>
+    </div>
+    
   </header>
   <main>
     <ul class="breadcrumbs container">
-      <li><a href="index.html" class="breadcrumbs-link"><img src="#" alt="Home"></a></li>
+      <li><a href="index.html" class="breadcrumbs-link"><img src="img/icon-home.svg" alt="Home"></a></li>
       <li><a href="catalog.html" class="breadcrumbs-link">Каталог</a></li>
       <li><a href="tool.html" class="breadcrumbs-link">Инструмент</a></li>
       <li><a class="breadcrumbs-link-current breadcrumbs-link">Перфораторы</a></li>
     </ul>
-    <h2 class="page-title container">Перфораторы</h2>
+    
+	<h2 class="page-title container">Перфораторы</h2>
+    
     <section class="catalog container">
       <div class="main-filters">
         <h2>Фильтр:</h2>
         <form action="#" method="get" class="filter">
           <fieldset>
             <legend>Цена</legend>
-            <div id="slider-price"></div>
+            <div id="slider-price" class="slider-price"></div>
             <input type="text" name="min-price" class="min-price">
             -
             <input type="text" name="max-price" class="max-price">
@@ -148,9 +155,11 @@
       </div>
       <div class="sort">
         <h2>Сортировка:</h2>
-        <a href="#">По цене</a>
-        <a href="#">По типу</a>
-        <a href="#">По функционалу</a>
+        
+    	<a href="#" class="sort-link-current">По цене</a>
+        <a href="#" class="sort-link">По типу</a>
+        <a href="#" class="sort-link">По функционалу</a>
+        
         <a href="#">
           <img src="img/min-max.svg" alt="Сортировка от меньшего к большему">
         </a>
@@ -165,7 +174,7 @@
           <li class="catalog-item">
             <img src="img/1.png" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
             <h3>
-              <a href="catalog-item.html">
+              <a href="catalog-item.html" class="title-product">
                 Перфоратор Bosch BFG 3000
               </a>
             </h3>
@@ -183,7 +192,7 @@
           <li class="catalog-item">
             <img src="img/2.png" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
             <h3>
-              <a href="catalog-item.html">
+              <a href="catalog-item.html" class="title-product">
                 Перфоратор Bosch BFG 6000
               </a>
             </h3>
@@ -201,7 +210,7 @@
           <li class="catalog-item new">
             <img src="img/3.png" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
             <h3>
-              <a href="catalog-item.html">
+              <a href="catalog-item.html" class="title-product">
                 Перфоратор Bosch BFG 2000
               </a>
             </h3>
@@ -218,7 +227,7 @@
           <li class="catalog-item">
             <img src="img/1.png" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
             <h3>
-              <a href="catalog-item.html">
+              <a href="catalog-item.html" class="title-product">
                 Перфоратор Bosch BFG 3000
               </a>
             </h3>
@@ -236,7 +245,7 @@
           <li class="catalog-item new">
             <img src="img/2.png" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
             <h3>
-              <a href="catalog-item.html">
+              <a href="catalog-item.html" class="title-product">
                 Перфоратор Bosch BFG 6000
               </a>
             </h3>
@@ -254,7 +263,7 @@
           <li class="catalog-item">
             <img src="img/3.png" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
             <h3>
-              <a href="catalog-item.html">
+              <a href="catalog-item.html" class="title-product">
                 Перфоратор Bosch BFG 2000
               </a>
             </h3>
@@ -271,7 +280,7 @@
           <li class="catalog-item new">
             <img src="img/1.png" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
             <h3>
-              <a href="catalog-item.html">
+              <a href="catalog-item.html" class="title-product">
                 Перфоратор Bosch BFG 3000
               </a>
             </h3>
@@ -289,7 +298,7 @@
           <li class="catalog-item">
             <img src="img/2.png" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
             <h3>
-              <a href="catalog-item.html">
+              <a href="catalog-item.html" class="title-product">
                 Перфоратор Bosch BFG 6000
               </a>
             </h3>
@@ -307,7 +316,7 @@
           <li class="catalog-item">
             <img src="img/3.png" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
             <h3>
-              <a href="catalog-item.html">
+              <a href="catalog-item.html" class="title-product">
                 Перфоратор Bosch BFG 2000
               </a>
             </h3>
@@ -324,11 +333,18 @@
         </ul>
       </div>
       <ul class="pagination-list">
-        <li class="pagination-item current"><a href="#">1</a></li>
-        <li class="pagination-item"><a>2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">Следующая</a></li>
+        <li class="pagination-item-current"><a>1</a></li>
+        <li class="pagination-item" tabindex="0"><a href="#">2</a></li>
+        <li class="pagination-item" tabindex="0"><a href="#">3</a></li>
+        <li class="pagination-item" tabindex="0"><a href="#">Следующая</a></li>
       </ul>
+    </section>
+    <section class="about-perf">
+    	<h2 class="title-perf">Пара слов о рерфораторах</h2>
+    	<p>
+    		Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+			Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+    	</p>
     </section>
     <section class="sup-footer">
       <div class="container">
@@ -355,13 +371,6 @@
           </ul>
         </div>
       </div>
-    </section>
-    <section class="about-perf">
-    	<p class="title-perf">Пара слов о рерфораторах</p>
-    	<p>
-    		Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-			Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-    	</p>
     </section>
   </main>
   <footer class="footer">
@@ -403,8 +412,11 @@
   	<p>
   		Товар добавлен в корзину!
   	</p>
-  	<a href="#" class="btn btn-modal">Оформить заказ</a>
-  	<button class="btn btn-modal-close" type="button">Продолжить покупки</button>
+  	
+  	<div class="font-btns">
+  		<a href="#" class="btn btn-modal">Оформить заказ</a>
+  		<button class="btn btn-modal-close" type="button">Продолжить покупки</button>
+  	</div>
   	<button class="modal-close" type="button" aria-label="Закрыть окно">X</button>
   </section>
 
