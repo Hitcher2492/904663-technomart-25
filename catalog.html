@@ -15,7 +15,7 @@
     <div class="header-top">
       <div class="container">
         <a class="header-logo logo">
-          Техномарт
+          <img src="img/logo-small.png" alt="Логотип - Техномарт">
         </a>
         <div class="header-search">
           <form action="#" method="get">
@@ -23,7 +23,7 @@
             <input id="search" type="search" name="search" placeholder="Поиск:" class="search">
           </form>
         </div>
-        <ul>
+        <ul class="res-ul">
           <li>
             <a href="#" class="header-bookmark">Закладки:<span>0</span></a>
           </li>
@@ -31,7 +31,7 @@
             <a href="#" class="header-cart">Корзина:<span>10</span></a>
           </li>
           <li>
-            <a href="#" class="btn order-btn">Оформить заказ</a>
+            <a href="#" class="header-btn header-btn-offer">Оформить заказ</a>
           </li>
         </ul>
       </div>
@@ -51,56 +51,56 @@
       <div class="header-user-log">
         <div class="profile">
           <a href="#" class="user-name">
-            <svg>#</svg>
+            <img src="img/icon-user.svg" alt="Иконка пользователя">
             Равшан Дшамшутович
           </a>
           <a href="#" class="user-logout">
-            <svg>#</svg>
+            <img src="img/icon-logout.svg" alt="Иконка выхода из профиля">
           </a>
         </div>
-        <ul class="user-links">
-          <li><a href="#">Мои заказы</a></li>
-          <li><a href="#">Личный кабинет</a></li>
+        <ul class="res-ul">
+          <li><a href="#" class="user-link">Мои заказы</a></li>
+          <li><a href="#" class="user-link">Личный кабинет</a></li>
         </ul>
       </div>
       <nav>
-      <ul class="header-nav">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="company.html">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="spec.html">Спецпредложения</a></li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+      <ul class="header-menu res-ul">
+        <li><a href="index.html" class="header-menu-link">Главная</a></li>
+        <li><a href="company.html" class="header-menu-link">Компания</a></li>
+        <li><a href="catalog.html" class="header-menu-link">Каталог</a></li>
+        <li><a href="news.html" class="header-menu-link">Новости</a></li>
+        <li><a href="spec.html" class="header-menu-link">Спецпредложения</a></li>
+        <li><a href="delivery.html" class="header-menu-link">Доставка</a></li>
+        <li><a href="contacts.html" class="header-menu-link">Контакты</a></li>
       </ul>
     </nav>
     </div>
     
   </header>
   <main>
-    <ul class="breadcrumbs container">
+    <ul class="breadcrumbs container res-ul">
       <li><a href="index.html" class="breadcrumbs-link"><img src="img/icon-home.svg" alt="Home"></a></li>
       <li><a href="catalog.html" class="breadcrumbs-link">Каталог</a></li>
       <li><a href="tool.html" class="breadcrumbs-link">Инструмент</a></li>
       <li><a class="breadcrumbs-link-current breadcrumbs-link">Перфораторы</a></li>
     </ul>
     
-	<h2 class="page-title container">Перфораторы</h2>
+	<h2 class="page-title container title">Перфораторы</h2>
     
     <section class="catalog container">
       <div class="main-filters">
         <h2>Фильтр:</h2>
         <form action="#" method="get" class="filter">
-          <fieldset>
-            <legend>Цена</legend>
+          <fieldset class="res-border">
+            <legend class="filter-caption">Цена</legend>
             <div id="slider-price" class="slider-price"></div>
             <input type="text" name="min-price" class="min-price">
             -
             <input type="text" name="max-price" class="max-price">
           </fieldset>
-          <fieldset>
-            <legend>Производители:</legend>
-            <ul>
+          <fieldset class="res-border">
+            <legend class="filter-caption">Производители:</legend>
+            <ul class="res-ul">
               <li class="filter-option">
                 <label>
                   <input type="checkbox" name="Bosch" checked>
@@ -133,9 +133,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Питание:</legend>
-            <ul>
+          <fieldset class="res-border">
+            <legend class="filter-caption">Питание:</legend>
+            <ul class="res-ul">
               <li class="filter-option">
                 <label>
                   <input type="radio" name="product-feature" value="battery" checked>
@@ -170,7 +170,7 @@
       <div class="main-catalog">
         <h2 class="visually-hidden">Карточки товаров</h2>
         <img src="" alt="" width="218" height="170">
-        <ul class="catalog-list">
+        <ul class="catalog-list res-ul">
           <li class="catalog-item">
             <img src="img/1.png" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
             <h3>
@@ -181,7 +181,7 @@
             <p class="catalog-price-del">
               22500 Р
             </p>
-            <ul class="item-actions">
+            <ul class="item-actions res-ul">
               <li><a href="#" class="item-actions-buy">Купить</a></li>
               <li><a href="#" class="item-actions-bookmarks">В закладки</a></li>
             </ul>
@@ -199,7 +199,7 @@
             <p class="catalog-price-del">
               30500 Р
             </p>
-            <ul class="item-actions">
+            <ul class="item-actions res-ul">
               <li><a href="#" class="item-actions-buy">Купить</a></li>
               <li><a href="#" class="item-actions-bookmarks">В закладки</a></li>
             </ul>
@@ -216,7 +216,7 @@
             </h3>
             <p class="catalog-price-del">
             </p>
-            <ul class="item-actions">
+            <ul class="item-actions res-ul">
               <li><a href="#" class="item-actions-buy">Купить</a></li>
               <li><a href="#" class="item-actions-bookmarks">В закладки</a></li>
             </ul>
@@ -234,7 +234,7 @@
             <p class="catalog-price-del">
               22500 Р
             </p>
-            <ul class="item-actions">
+            <ul class="item-actions res-ul">
               <li><a href="#" class="item-actions-buy">Купить</a></li>
               <li><a href="#" class="item-actions-bookmarks">В закладки</a></li>
             </ul>
@@ -252,7 +252,7 @@
             <p class="catalog-price-del">
               30500 Р
             </p>
-            <ul class="item-actions">
+            <ul class="item-actions res-ul">
               <li><a href="#" class="item-actions-buy">Купить</a></li>
               <li><a href="#" class="item-actions-bookmarks">В закладки</a></li>
             </ul>
@@ -269,7 +269,7 @@
             </h3>
             <p class="catalog-price-del">
             </p>
-            <ul class="item-actions">
+            <ul class="item-actions res-ul">
               <li><a href="#" class="item-actions-buy">Купить</a></li>
               <li><a href="#" class="item-actions-bookmarks">В закладки</a></li>
             </ul>
@@ -287,7 +287,7 @@
             <p class="catalog-price-del">
               22500 Р
             </p>
-            <ul class="item-actions">
+            <ul class="item-actions res-ul">
               <li><a href="#" class="item-actions-buy">Купить</a></li>
               <li><a href="#" class="item-actions-bookmarks">В закладки</a></li>
             </ul>
@@ -305,7 +305,7 @@
             <p class="catalog-price-del">
               30500 Р
             </p>
-            <ul class="item-actions">
+            <ul class="item-actions res-ul">
               <li><a href="#" class="item-actions-buy">Купить</a></li>
               <li><a href="#" class="item-actions-bookmarks">В закладки</a></li>
             </ul>
@@ -322,7 +322,7 @@
             </h3>
             <p class="catalog-price-del">
             </p>
-            <ul class="item-actions">
+            <ul class="item-actions res-ul">
               <li><a href="#" class="item-actions-buy">Купить</a></li>
               <li><a href="#" class="item-actions-bookmarks">В закладки</a></li>
             </ul>
@@ -332,7 +332,7 @@
           </li>
         </ul>
       </div>
-      <ul class="pagination-list">
+      <ul class="pagination-list res-ul">
         <li class="pagination-item-current"><a>1</a></li>
         <li class="pagination-item" tabindex="0"><a href="#">2</a></li>
         <li class="pagination-item" tabindex="0"><a href="#">3</a></li>
@@ -340,7 +340,7 @@
       </ul>
     </section>
     <section class="about-perf">
-    	<h2 class="title-perf">Пара слов о рерфораторах</h2>
+    	<h2 class="title-perf title">Пара слов о рерфораторах</h2>
     	<p>
     		Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
 			Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
@@ -349,25 +349,25 @@
     <section class="sup-footer">
       <div class="container">
         <a class="sup-footer-logo logo">
-          Техномарт
+          <img src="img/logo-big.png" alt="Логотип - Техномарт">
         </a>
         <p class="sup-footer-address">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
         </p>
         <div class="sup-footer-nav">
-          <ul class="menu-top sup-footer-menu">
-            <li><a href="company.html">Компания</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+          <ul class="menu-top sup-footer-menu res-ul">
+            <li><a href="company.html" class="menu-top-link">Компания</a></li>
+            <li><a href="news.html" class="menu-top-link">Новости</a></li>
+            <li><a href="catalog.html" class="menu-top-link">Каталог</a></li>
+            <li><a href="delivery.html" class="menu-top-link">Доставка</a></li>
+            <li><a href="contacts.html" class="menu-top-link">Контакты</a></li>
           </ul>
-          <ul class="menu-bottom sup-footer-menu">
-            <li><a href="materials.html">Материалы</a></li>
-            <li><a href="technic.html">Техника</a></li>
-            <li><a href="tool.html">Инструмент</a></li>
-            <li><a href="spec.html">Спецпредложения</a></li>
+          <ul class="menu-bottom sup-footer-menu res-ul">
+            <li><a href="materials.html" class="menu-bottom-link">Материалы</a></li>
+            <li><a href="technic.html" class="menu-bottom-link">Техника</a></li>
+            <li><a href="tool.html" class="menu-bottom-link">Инструмент</a></li>
+            <li><a href="spec.html" class="menu-bottom-link">Спецпредложения</a></li>
           </ul>
         </div>
       </div>
@@ -379,7 +379,7 @@
         © 2010–2019 Компания «Техномарт»
         Все права защищены
       </p>
-      <ul class="footer-social">
+      <ul class="footer-social res-ul">
         <li>
           <a href="#" class="social-button">
             <img src="img/vk-icon.svg" alt="ВК">
@@ -397,11 +397,11 @@
         </li>
       </ul>
       <div class="footer-links">
-        <p>Обратная связь:
-          <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <p class="footer-caption">Обратная связь:
+          <a href="mail@htmlacademy.ru" class="footer-link">mail@htmlacademy.ru</a>
         </p>
-        <p>Разработано -
-          <a href="htmlacademy.ru">htmlacademy.ru</a>
+        <p class="footer-caption">Разработано -
+          <a href="htmlacademy.ru" class="footer-link">htmlacademy.ru</a>
         </p>
       </div>
     </div>
