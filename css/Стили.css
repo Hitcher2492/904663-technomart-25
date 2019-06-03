@@ -1,0 +1,823 @@
+/*
+Добавляем box-sizing
+*/
+html {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+*,*::after,*::before {
+	box-sizing: inherit;
+}
+
+/* Стили для body */
+body {
+	padding: 0;
+	margin: 0;
+
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1;
+
+	color: #000;
+	background-color: #ffffff;
+}
+
+/* Стили для ссылок */
+a {
+	text-decoration: none;
+	font-family: inherit;
+}
+
+/* Стили для картинок */
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+/* Стили для повторяющихся элементов - нужно задать класс и его стилизовать после этого комментарии */
+/* Допустим кнопка */
+
+
+
+
+
+
+
+
+
+
+/* Шапка */
+.header {
+	/* Задай фон шапке */
+}
+.header-top {
+	/* базовые размеры задай не блоку целиком , а конечным элементам ссылкам например*/
+	/* font-size: 17px;
+	line-height: 18px; */
+
+	background-color: #293449;
+}
+
+.header-top ul {
+	list-style: none;
+}
+
+/* Нужно задать класс <a> так как не понятно какой ссылке задаешь белый цвет */
+/* .header-top a {
+	color: #ffffff;
+} */
+/* .header-top a:focus {
+	color: #b3b4b6;
+} */
+
+/* Задай фон ссылкам а не <li> */
+.header-top li:hover {
+	background-color: #212a3a;
+}
+
+/* После того как <header> задашь фон то у этого блока не будет смысла повторно задавать фон*/
+/* .header-middle {
+	background-color: #f3f7f8;
+} */
+
+.header-title {
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
+
+	color: #ee3643;
+}
+
+/* Меню пользователя */
+
+/* Задавай ссылкам блока header-user класс и их стилизуй так ты сократишь количество кода */
+/* .header-user a {
+	color: #000000;
+}
+
+.header-user li {
+	font-size: 21px;
+	line-height: 21px;
+
+	background-color: #ffffff;
+} */
+
+/* .header-user a:hover {
+	color: #ee3643;
+}
+
+.header-user a:focus {
+	color: #cacaca;
+}
+
+.header-nav a {
+	color: #ffffff;
+} */
+.profile a {
+	color: #000000;
+}
+
+.profile {
+	font-size: 21px;
+	line-height: 21px;
+
+	background-color: #ffffff;
+}
+
+.user-links a {
+	color: #32425c;
+}
+
+.user-links li {
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: underline;
+}
+
+.user-links a:hover {
+	color: #ee3643;
+}
+
+.profile a:focus,
+.user-links a:focus {
+	color: #cacaca;
+}
+
+/* Меню */
+
+.header-nav {
+	/* Нужно стилизовать не блок ul, а ссылки лежащие внутри него. И еще неправильно задал класс (замени на .header-menu) */
+	/* font-size: 17px; */
+	/* line-height: 17px; */
+
+	background-color: #32425c;
+	/* Удали все border-bottom так как в макете используются box-shadow */
+	border-bottom: 5px solid #293449;
+
+	list-style: none;
+}
+
+/* .header-nav li:hover {
+	background-color: #293449;
+}
+
+.header-nav a:focus {
+	color: #a1a4a8;
+} */
+
+
+/* Лого */
+.logo {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+
+	background-color: #ee3643;
+
+	/* border-bottom: 5px solid #b52933; */
+}
+
+.logo:hover,
+.logo:focus {
+	background-color: #ba2732;
+}
+
+/* Поиск */
+.search {
+	background-color: #293449;
+
+	border: none;
+}
+
+.search::-webkit-input-placeholder {
+	color: #ffffff;
+}
+
+.search::-moz-placeholder  {
+	color: #ffffff;
+}
+
+.search:-moz-placeholder {
+	color: #ffffff;
+}
+
+.search:-ms-input-placeholder {
+	color: #ffffff;
+}
+
+.search:hover::-webkit-input-placeholder {
+	background-color: #212a3a;
+}
+
+.search:hover::-moz-placeholder  {
+	background-color: #212a3a;
+}
+
+.search:hover:-moz-placeholder {
+	background-color: #212a3a;
+}
+
+.search:hover:-ms-input-placeholder {
+	background-color: #212a3a;
+}
+
+.search:focus::-webkit-input-placeholder {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.search:focus::-moz-placeholder  {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.search:focus:-moz-placeholder {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.search:focus:-ms-input-placeholder {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+/* Кнопка */
+
+.btn {
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #ee3643;
+	border: none;
+	border-radius: 1px;
+}
+
+.btn:hover {
+	background-color: #ca2c37;
+}
+
+.btn:focus {
+	background-color: #ba2732;
+}
+
+
+.order-btn {
+	text-transform: none;
+
+	background-color: #63a63e;
+}
+
+.order-btn:hover {
+	background-color: #5fbb2d;
+}
+
+.order-btn:focus {
+	background-color: #518534;
+	color: #b3b4b6;
+}
+
+
+/* Телефон */
+.phone {
+	font-size: 21px;
+	line-height: 21px;
+
+	color: #ee3643;
+
+	border: 3px solid #ffffff;
+}
+/* Адрес */
+.address {
+	font-size: 14px;
+	line-height: 24px;
+
+	color: #32425c;
+}
+
+
+
+
+
+.advantages-list h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.advantages-item:first-child,
+.advantages-item:last-child {
+	background-color: #ffbf47;
+}
+
+.advantages-item:nth-child(2) {
+	background-color: #3bbce3;
+}
+
+.advantages-item:nth-child(3) {
+	background-color: #dc91d8;
+}
+
+.advantages-item:nth-child(4) {
+	background-color: #8ed78f;
+}
+
+.btn-advantages {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-advantages:hover {
+	background-color: #cccccc;
+}
+
+.btn-advantages:focus {
+	background-color: #b2b2b2;
+}
+
+.advantages-list .new {
+	background-image: url("../img/new flag.png");
+	background-repeat: no-repeat;
+}
+/* Слайдер */
+.slider h3 {
+	font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+
+.slider p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+/* Блок с заголовком и кнопкой */
+.caption {
+	background-color: #f9f5f0;
+}
+/* Убери глобальные стили */
+/* h2 {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #324164;
+} */
+
+/* Список с товарами */
+.top-list {
+	/* Нет нет задаешь стили не блоку а содержимому */
+	/* font-family: "PT Sans", Arial, sans-serif; */
+	/* font-weight: 700; */
+
+	list-style: none;
+}
+
+.title-product {
+	font-size: 18px;
+	line-height: 20px;
+	/* color: #000000; */
+}
+
+.catalog-price-del {
+	font-size: 17px;
+	line-height: 18px;
+	color: #a9a9a9;
+	text-decoration: line-through;
+}
+
+.catalog-item {
+	border: 1px solid #eaeaea;
+}
+
+.catalog-item:hover {
+	box-shadow: 10px 10px 25px 0px rgba(41, 52, 73, 0.5)
+}
+
+.top-list .new {
+	background-image: url("../img/new flag.png");
+	background-repeat: no-repeat;
+	/* И спозиционируй фон */
+}
+
+.catalog-price {
+	font-size: 17px;
+	line-height: 18px;
+
+	background-color: #ee3643;
+}
+
+.item-actions {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.item-actions a {
+	border-radius: 1px;
+}
+
+.item-actions-buy {
+	color: #ffffff;
+
+	background-color: #63a63e;
+
+	/* border-bottom: 3px solid #367315; */
+}
+
+.item-actions-buy:hover {
+	background-color: #5fbb2d;
+}
+
+.item-actions-buy:focus {
+	background-color: #518534;
+}
+
+.item-actions-bookmarks {
+	color: #32425c;
+
+	border: 3px solid #63a63e;
+}
+
+.item-actions-bookmarks:hover {
+	border: 3px solid #32425c;
+}
+
+.item-actions-bookmarks:focus {
+	color: #c1c6ce;
+
+	border: 3px solid #c1c6ce;
+}
+
+
+/* Производители */
+.manufacturers-list {
+	list-style: none;
+}
+/* Обращайся к ссылкам а не к <li> */
+
+/* .manufacturers-list li {
+	border: 1px solid #eaeaea;
+} */
+
+/* .manufacturers-list li:hover {
+	box-shadow: 10px 10px 25px 0px rgba(41, 52, 73, 0.5);
+}
+
+.manufacturers-list li:focus {
+	box-shadow: 4px 4px 10px 0px rgba(41, 52, 73, 0.5);
+	opacity: 0.3;
+} */
+
+
+/* Сервисы - Пока норм */
+.serciсes {
+	color: #000000;
+
+	background-color: #f4f7f9;
+}
+
+.serciсes h2 {
+	color: #000000;
+}
+
+.serciсes p {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.serciсes-nav {
+	font-size: 21px;
+	line-height: 30px;
+
+	background-color: #32425c;
+
+	list-style: none;
+}
+
+.serciсes-nav a {
+	color: #ffffff;
+}
+
+.serciсes-nav li:hover {
+	background-color: #293449;
+}
+
+.serciсes-nav .current {
+	color: #32425c;
+
+	background-color: #ffffff;
+}
+
+.services-list {
+	list-style: none;
+}
+
+.services-list h3 {
+	font-size: 36px;
+	line-height: 36px;
+	color: #32425c;
+	font-weight: 400;
+}
+
+/* О нас */
+
+/* .about h2 { */
+	/* color: #000000; */
+/* } */
+
+.about p {
+	font-family: "PT Sans", Arial, sans-serif;
+	/* font-size: 13px; */
+	line-height: 24px;
+	/* color: #000000; */
+}
+
+.about-info ul {
+	/* Нет опять задаешь блоку - задавай блоку все что связано с позиционированием (паддинг, марджин, ширину и высоту и фон, но ращмер шрифта задавай конечному элементу) */
+	font-size: 18px;
+	line-height: 20px;
+	/* color: #000000; */
+
+	list-style: none;
+}
+/* Подвал вверх */
+.sup-footer {
+	/* Нет опять задаешь блоку - */
+	/* font-size: 18px; */
+	/* line-height: 24px; */
+
+	background-color: #32425c;
+}
+
+/* Указывай класс ссылки так как у тебя в этом блоке не онда ссылка а много ссылок */
+.sup-footer a {
+	color: #ffffff;
+}
+
+.sup-footer-menu {
+	list-style: none;
+}
+
+.sup-footer-menu a:hover {
+	text-decoration: underline;
+}
+
+.sup-footer-menu a:focus {
+	opacity: 0.5;
+}
+
+.menu-bottom a {
+	color: #ffd180;
+}
+
+.footer {
+	/* Нет опять задаешь блоку - */
+	/* font-size: 16px; */
+
+	background-color: #293449;
+}
+
+.footer-social {
+	list-style: none;
+}
+/* Задавай ссылкам а не li */
+/* .footer-social li {
+	background-color: #212a3a;
+	border-radius: 30px;
+}
+
+.footer-social li:hover,
+.footer-social li:focus {
+	background-color: #ee3643;
+} */
+
+.footer-links a {
+	color: #ffd180;
+}
+
+.footer-links a:hover {
+	text-decoration: underline;
+}
+
+.footer-links a:focus {
+	color: #ee3643;
+	text-decoration: none;
+}
+/* Модальное окно - пока не трогаю */
+.modal {
+	font-size: 18px;
+	color: #000000;
+
+	border-top: 7px solid #ff5257;
+
+	box-shadow: 20px 20px 40px 0px rgba(0, 0, 0, 0.25)
+}
+
+.font-btn {
+	background-color: #f4f4f4;
+}
+
+.login-form input,
+.login-form textarea {
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 13px;
+
+	border: 2px solid #dee3e4;
+	border-radius: 1px;
+}
+
+
+/* Хлебные крошки */
+.breadcrumbs {
+	font-family: "PT Sans", Arial, sans-serif;
+	/* font-size: 13px; */
+	text-transform: uppercase;
+
+	list-style: none;
+}
+
+.breadcrumbs a {
+	color: #000000;
+}
+/* Незачем */
+/* .page-title { */
+	/* background-color: #f2f6f8; */
+/* } */
+
+.main-filters,
+.sort {
+	font-family: "PT Sans", Arial, sans-serif;
+	/* color: #000000; */
+}
+
+.main-filters h2,
+.sort h2,
+.sort {
+	/* font-size: 13px; */
+
+	background-color: #f7f3ec;
+}
+
+/* нет глобальных стилей для тега */
+/* fieldset {
+	border: none;
+}
+
+fieldset legend {
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+} */
+
+/* Смотри урок по декоративным элементам и там возьми слайдер */
+/* .slider-price,
+.min-price,
+.max-price {
+	background-color: #f7f3ec;
+}
+
+.min-price,
+.max-price {
+	border: none;
+} */
+
+.main-filters ul {
+	list-style: none;
+}
+
+.filter-option {
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+}
+
+.filter-option:disabled {
+	opacity: 0.6;
+}
+
+.btn-filter {
+	font-family: "PT Sans", Arial, sans-serif;
+	/* font-size: 13px; */
+	/* line-height: 18px; */
+	/* color: #000000; */
+
+	background-color: #ffffff;
+
+	border: 1px solid #e5e5e5;
+}
+
+.btn-filter:hover {
+	background-color: #ffffff;
+
+	border: 1px solid #bdc6ca;
+}
+
+.btn-filter:focus {
+	background-color: #ffffff;
+
+	border: 1px solid #ee3643;
+}
+
+.sort-link {
+	color: #c7c7c7;
+
+	/* border-bottom: 1px dotted #ee3643; */
+}
+
+.sort {
+	text-transform: uppercase;
+}
+
+.sort-link:hover {
+	color: #000000;
+
+	/* border-bottom: 1px solid #ee3643; */
+}
+
+.sort-link-current {
+	color: #ee3643;
+
+	border: none;
+}
+
+.pagination-list {
+	font-family: "PT Sans", Arial, sans-serif;
+	text-transform: uppercase;
+	list-style: none;
+}
+
+/* .pagination-item a {
+	color: #000000;
+} */
+
+.pagination-item {
+	border: 1px solid #e5e5e5;
+	border-radius: 1px;
+}
+
+.pagination-item-current a {
+	color: #ffffff;
+}
+
+.pagination-item-current {
+	background-color: #ee3643;
+}
+
+.pagination-item:hover {
+	border: 1px solid #bdc6ca;
+}
+
+.pagination-item:focus {
+	border: 1px solid #ee3643;
+}
+
+.about-perf {
+	background-color: #f2f6f8;
+}
+
+.about-perf p {
+	font-family: "PT Sans", Arial, sans-serif;
+	line-height: 24px;
+	/* color: #000000; */
+}
+
+/* .title-perf { */
+	/* color: #000000; */
+/* } */
+
+.modal-cart p {
+	font-size: 30px;
+	line-height: 30px;
+}
+/* Модальное окно по покупке - пока не трогаю */
+.btn-modal-close {
+	color: #000000;
+
+	background-color: #ffffff;
+
+}
+
+.font-btns {
+	background-color: #f1f1f1;
+}
+
+.btn-modal-close:hover {
+	color: #ee3643;
+
+	background-color: #ffffff;
+}
+
+.btn-modal-close:focus {
+	color: #cacaca;
+
+	background-color: #ffffff;
+}
