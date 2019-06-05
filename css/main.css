@@ -617,7 +617,7 @@ img {
 }
 
 /* Смотри урок по декоративным элементам и там возьми слайдер */
-/* .slider-price,
+ .slider-price,
 .min-price,
 .max-price {
 	background-color: #f7f3ec;
@@ -626,7 +626,7 @@ img {
 .min-price,
 .max-price {
 	border: none;
-} */
+} 
 
 .filter-option {
 	font-size: 15px;
