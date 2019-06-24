@@ -102,60 +102,77 @@
       <div class="main-filters">
         <h2 class="main-filters-title">Фильтр:</h2>
         <form action="#" method="get" class="filter">
-          <fieldset class="res-border">
+          <fieldset class="res-border range-filter">
             <legend class="filter-caption">Цена</legend>
-            <div id="slider-price" class="slider-price"></div>
-            <input type="text" name="min-price" class="min-price">
-            -
-            <input type="text" name="max-price" class="max-price">
+            <div class="slider-price">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <input class="min-price" name="min-price" type="text" value="0">
+                <img src="img/line.png" class="line" alt="Линия" width="10" height="1">
+                <input class="max-price" name="max-price" type="text" value="15000">
+              </div>
+            </div>
           </fieldset>
-          <fieldset class="res-border">
+          <fieldset class="res-border check-filter">
             <legend class="filter-caption">Производители:</legend>
-            <ul class="res-ul">
+            <ul class="check-list res-ul">
               <li class="filter-option">
-                <label>
-                  <input type="checkbox" name="Bosch" checked>
+                <label class="check">
+                  <input class="check-input visually-hidden" type="checkbox" name="Bosch" checked>
+                  <span class="check-box"></span>
                   Bosch
                 </label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input type="checkbox" name="Интерскол">
+                <label class="check">
+                  <input class="check-input visually-hidden" type="checkbox" name="Интерскол">
+                  <span class="check-box"></span>
                   Интерскол
                 </label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input type="checkbox" name="Makita" checked>
+                <label class="check">
+                  <input class="check-input visually-hidden" type="checkbox" name="Makita" checked>
+                  <span class="check-box"></span>
                   Makita
                 </label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input type="checkbox" name="Dewalt">
+                <label class="check">
+                  <input class="check-input visually-hidden" type="checkbox" name="Dewalt">
+                  <span class="check-box"></span>
                   Dewalt
                 </label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input type="checkbox" name="Hitachi">
+                <label class="check">
+                  <input class="check-input visually-hidden" type="checkbox" name="Hitachi">
+                  <span class="check-box"></span>
                   Hitachi
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="res-border">
+          <fieldset class="res-border radio-filter">
             <legend class="filter-caption">Питание:</legend>
-            <ul class="res-ul">
+            <ul class="res-ul radio-list">
               <li class="filter-option">
-                <label>
-                  <input type="radio" name="product-feature" value="battery" checked>
+                <label class="radio-label">
+                  <input class="radio-input visually-hidden" type="radio" name="product-feature" value="battery" checked>
+                  <span class="radio-span"></span>
                   Аккумуляторные
                 </label>
               </li>
               <li class="filter-option">
-                <label>
-                  <input type="radio" name="product-feature" value="network">
+                <label class="radio-label">
+                  <input class="radio-input visually-hidden" type="radio" name="product-feature" value="network">
+                  <span class="radio-span"></span>
                   Сетевые
                 </label>
               </li>
@@ -396,13 +413,12 @@
     </section>
     <section class="about-perf">
       <div class="container">
-        <h2 class="title-perf title">Пара слов о рерфораторах</h2>
+        <h2 class="title-perf title">Пара слов о перфораторах</h2>
         <p class="about-perf-par">
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-          
         </p>
         <p class="about-perf-par">
-        	Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
       </div>
     </section>
@@ -477,14 +493,17 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal-cart container">
-    <img src="img/form-1.svg" alt="Товар добавленг в корзину">
-    <p>
-      Товар добавлен в корзину!
-    </p>
+
+  <section class="modal modal-cart">
+  	<div class="modal-cart-wrap">
+  		<img src="img/form-1.svg" alt="Товар добавленг в корзину">
+	    <p class="modal-cart-text">
+	      Товар добавлен в корзину!
+	    </p>
+  	</div>
     <div class="font-btns">
       <a href="#" class="btn btn-modal">Оформить заказ</a>
-      <button class="btn btn-modal-close" type="button">Продолжить покупки</button>
+      <button class="btn btn-modal btn-modal-close" type="button">Продолжить покупки</button>
     </div>
     <button class="modal-close" type="button" aria-label="Закрыть окно"><span class="visually-hidden">Закрыть окно</span></button>
   </section>
