@@ -91,6 +91,10 @@ img {
 	text-transform: uppercase;
 }
 
+.modal-error {
+	animation: shake 0.6s ease;
+}
+
 /*-------ШАПКА------*/
 
 .header {
@@ -611,7 +615,7 @@ img {
 .header-menu-link {
 	display: block;
 
-	min-height: 55px;
+	min-height: 60px;
 
 	font-size: 17px;
 	line-height: 17px;
@@ -1339,9 +1343,16 @@ img {
 .about-text {
 	font-family: "PT Sans", Arial, sans-serif;
 	line-height: 24px;
+}
 
+.about-info-text {
 	margin: 25px 0;
 }
+
+.about-contacts-text {
+	margin: 25px 0 32px 0;
+}
+
 .about-text:nth-child(3) {
 	margin-bottom: 20px;
 }
@@ -1357,7 +1368,7 @@ img {
 	line-height: 20px;
 
 	padding-left: 36px;
-	margin-bottom: 15px;
+	margin-bottom: 19px;
 }
 
 .example-item:last-child {
@@ -1574,6 +1585,43 @@ img {
 
 /*------МОДАЛЬНЫЕ ОКНА ГЛ.СТР------*/
 
+@keyframes bounceInUp {
+	0% {transform: translateY(500px);}
+	60% {transform: translateY(-20px);}	
+	75% {transform: translateY(10px);}
+	90% {transform: translateY(-5px);}
+}
+
+.modal-animation {
+	animation: bounceInUp 0.6s ease;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+	animation: shake 0.6s ease;
+}
+
 .modal {
 	font-size: 18px;
 	color: #000000;
@@ -1650,7 +1698,6 @@ img {
 	width: 100%;
 
 	padding: 10px 0;
-
 }
 
 .login-form input,
@@ -2225,10 +2272,21 @@ img {
 
 /*------МОДАЛЬНОЕ ОКНО КАТАЛОГ------*/
 
+@keyframes bounceInDown {
+	0% {transform: translateY(-2000px);}
+	60% {transform: translateY(20px);}	
+	75% {transform: translateY(-10px);}
+	90% {transform: translateY(5px);}
+}
+
+.modal-animation-catalog {
+	animation: bounceInDown 0.6s ease;
+}
+
 .modal-cart {
 	display: none;
 
-	position: fixed;
+	position: absolute;
 	top: 410px;
 	left: 50%;
 
@@ -2275,6 +2333,8 @@ img {
 	max-height: 38px;
 
 	padding: 10px 0;
+
+	cursor: pointer;
 }
 
 .btn-modal-close:hover {
