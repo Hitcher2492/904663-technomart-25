@@ -371,7 +371,7 @@ img {
 
 	color: #ee3643;
 
-	width: 300px;
+	width: 310px;
 
 	padding-left: 53px;
 	padding-right: 50px;
@@ -690,7 +690,7 @@ img {
 }
 
 .advantages-list .new {
-	background-image: url("../img/new flag.png");
+	background-image: url("../img/new-flag.png");
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 }
