@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="catalog-body">
   <header class="header header-catalog">
     <div class="header-top">
       <div class="container">
-        <a class="header-logo logo">
+        <a href="index.html" class="header-logo logo">
           <img src="img/logo-small.png" alt="Логотип - Техномарт">
         </a>
         <form action="#" method="get" class="header-search">
@@ -114,7 +114,7 @@
               </div>
               <div class="price-controls">
                 <input class="min-price" name="min-price" type="text" value="0">
-                <img src="img/line.png" class="line" alt="Линия" width="10" height="1">
+                &#8212;
                 <input class="max-price" name="max-price" type="text" value="15000">
               </div>
             </div>
@@ -425,7 +425,7 @@
     <section class="sup-footer">
       <div class="container">
         <div class="sup-footer-wrap">
-          <a class="sup-footer-logo logo">
+          <a href="index.html" class="sup-footer-logo logo">
             <img src="img/logo-big.png" alt="Логотип - Техномарт">
           </a>
           <p class="sup-footer-address">
@@ -493,21 +493,22 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal-cart">
-    <div class="modal-cart-wrap">
-      <img src="img/form-1.svg" alt="Товар добавленг в корзину">
-      <p class="modal-cart-text">
-        Товар добавлен в корзину!
-      </p>
-    </div>
-    <div class="font-btns">
-      <a href="#" class="btn btn-modal">Оформить заказ</a>
-      <button class="btn btn-modal btn-modal-close" type="button">Продолжить покупки</button>
-    </div>
-    <button class="modal-close" type="button" aria-label="Закрыть окно"><span class="visually-hidden">Закрыть окно</span></button>
-  </section>
-  <div class="overlay"></div>
-  <script src="js/catalog.js"></script>
+  <div class="overlay overlay-cart">
+    <section class="modal modal-cart">
+      <div class="modal-cart-wrap">
+        <img src="img/form-1.svg" alt="Товар добавленг в корзину">
+        <p class="modal-cart-text">
+          Товар добавлен в корзину!
+        </p>
+      </div>
+      <div class="font-btns">
+        <a href="#" class="btn btn-modal">Оформить заказ</a>
+        <button class="btn btn-modal btn-modal-close" type="button">Продолжить покупки</button>
+      </div>
+      <button class="modal-close" type="button" aria-label="Закрыть окно"><span class="visually-hidden">Закрыть окно</span></button>
+    </section>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
