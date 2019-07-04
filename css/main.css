@@ -253,9 +253,7 @@ img {
 	vertical-align: top;
 
 	width: 220px;
-}
 
-.header-logo img {
 	padding: 12px 57px 17px 55px;
 }
 
@@ -610,16 +608,33 @@ img {
 	margin-top: 6px;
 }
 
-.user-links img {
-	margin-left: 15px;
-	margin-right: 15px;
-}
-
 .user-link {
+	position: relative;
+
 	font-size: 16px;
 	line-height: 18px;
 	color: #32425c;
 	text-decoration: underline;
+}
+
+.user-li:nth-child(1) .user-link {
+	padding-right: 18px;
+	margin-right: 14px;
+}
+
+.user-li:nth-child(1) .user-link:after {
+	position: absolute;
+	top: 40%;
+	right: 0;
+
+	content: '';
+
+	width: 4px;
+	height: 5px;
+
+	border-radius: 50%;
+
+	background-color: #32425c;
 }
 
 .user-name:focus {
@@ -1559,9 +1574,7 @@ img {
 	width: 220px;
 	min-height: 68px;
 	max-height: 68px;
-}
 
-.sup-footer-logo img {
 	padding: 20px 41px;
 }
 
@@ -1906,8 +1919,7 @@ img {
 .login-form-item .name:focus,
 .login-form-item .e-mail:focus,
 .login-form-item .message:focus {
-	border: 2px solid #63a63e;
-	outline: none;
+	outline: 2px solid #63a63e;
 }
 
 .modal-map {
@@ -1951,10 +1963,6 @@ img {
 	height: 446px;
 
 	border: 0;
-}
-
-.outline-error {
-	border-color: #ee3643;
 }
 
 /*------ХЛЕБНЫЕ КРОШКИ------*/
