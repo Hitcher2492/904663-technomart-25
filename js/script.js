@@ -100,8 +100,24 @@ if (submit != null) {
 			popupModalLogin.classList.add("modal-error");
 			if (login.value) {
 				email.focus();
-			} else {
+				email.style.outlineColor = "#ee3643";
+				setTimeout(function () {
+			      email.style.outlineColor = "#63a63e";
+			    }, 1200);
+			} else if (email.value) {
 				login.focus();
+				login.style.outlineColor = "#ee3643";
+				setTimeout(function () {
+			      login.style.outlineColor = "#63a63e";
+			    }, 1200);
+			} else if (!login.value && !email.value) {
+				login.focus();
+				login.style.outlineColor = "#ee3643";
+				email.style.borderColor = "#ee3643";
+				setTimeout(function () {
+			      login.style.outlineColor = "#63a63e";
+			      email.style.borderColor = "#dee3e4";
+			    }, 1200);
 			}
 		} 
 	});
